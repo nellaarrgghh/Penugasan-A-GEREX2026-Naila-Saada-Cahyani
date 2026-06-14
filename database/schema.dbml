@@ -1,0 +1,12 @@
+// Skema database untuk Gugus Checker GEREX ITS 2026
+
+Table mahasiswa_baru {
+  id varchar [primary key, note: "UUID / Auto Increment INT"]
+  nrp varchar [unique, note: "Indexed untuk pencarian cepat API"]
+  nama varchar [note: "Nama lengkap maba"]
+  fakultas varchar [note: "Fakultas asal maba"]
+  departemen varchar [note: "Departemen/Jurusan maba"]
+  gugus varchar [note: "Nama/Nomor gugus maba"]
+  region varchar [note: "Asal region maba"]
+  no_telp varchar [note: "Kontak maba"]
+}
